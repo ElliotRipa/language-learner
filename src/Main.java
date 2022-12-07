@@ -2,13 +2,14 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> defs = new ArrayList<>();
-        defs.add("Cool thing");
+        ArrayList<Word> words = new ArrayList<>();
 
-        Word w1 = new Word("Yes", defs, "Noun");
+        words.add(new Word("Mi", "I", "Pronoun"));
+        words.add(new Word("Sine", "You", "Pronoun"));
+        words.add(new Word("Ona", "They", "Pronoun"));
+        words.add(new Word("Ni", "This", "Pronoun"));
 
-        System.out.println(w1.getWord());
-        System.out.println(w1.getDefinitions());
+        System.out.println(Quizzer.ofFourWords(words));
 
     }
 }

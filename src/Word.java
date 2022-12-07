@@ -14,6 +14,13 @@ public class Word {
         this.wordType = wordType;
     }
 
+    public Word(String word, String definition, String wordType) {
+        this.word = word;
+        this.definitions = new ArrayList<String>();
+        this.definitions.add(definition);
+        this.wordType = wordType;
+    }
+
     //Getters
     public String getWord() {
         return word;
@@ -29,6 +36,10 @@ public class Word {
 
     public String getNthDefinition(int n) {
         return definitions.get(n);
+    }
+
+    public String getWordType() {
+        return wordType;
     }
 
     //Setters
